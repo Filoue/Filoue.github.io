@@ -1,5 +1,7 @@
 import { Book, Target, Sword, Bomb } from 'lucide-react';
 import { AIDocSection } from './components/AIDocSection';
+import ReactDom from 'react-dom/client';
+import '../styles/index.css';
 
 export default function App() {
   return (
@@ -187,3 +189,5 @@ export default function App() {
     </div>
   );
 }
+
+ReactDom.createRoot(document.getElementById('root')!).render(<App />)
